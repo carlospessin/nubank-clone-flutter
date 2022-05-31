@@ -6,4 +6,5 @@ class Constants {
   static const white = Colors.white;
   static const lightGrey = Color.fromRGBO(240, 241, 245, 1);
   static const grey = Color.fromARGB(255, 118, 118, 118);
+  static const green = Color.fromARGB(255, 69, 152, 6);
 }
