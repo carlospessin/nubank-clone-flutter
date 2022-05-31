@@ -9,6 +9,7 @@ import 'package:nubank/modules/investing/investing.dart';
 import 'package:nubank/modules/lineDivider/line_divider.dart';
 import 'package:nubank/modules/loan/loan.dart';
 import 'package:nubank/modules/myCards/my_cards.dart';
+import 'package:nubank/modules/shopping/shopping.dart';
 import 'package:nubank/shared/constants.dart';
 
 void main() {
@@ -67,6 +68,8 @@ class _HomeState extends State<Home> {
               Investing(),
               LineDivider(),
               Insurance(),
+              LineDivider(),
+              Shopping(),
               LineDivider(),
             ],
           ),
