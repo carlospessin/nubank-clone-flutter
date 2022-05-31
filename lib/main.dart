@@ -5,6 +5,7 @@ import 'package:nubank/modules/actionsIcons/actions.dart';
 import 'package:nubank/modules/creditCard/credit_card.dart';
 import 'package:nubank/modules/header/header.dart';
 import 'package:nubank/modules/lineDivider/line_divider.dart';
+import 'package:nubank/modules/loan/loan.dart';
 import 'package:nubank/modules/myCards/my_cards.dart';
 import 'package:nubank/shared/constants.dart';
 
@@ -49,16 +50,20 @@ class _HomeState extends State<Home> {
   _body() {
     return SafeArea(
       child: Container(
-        child: Column(
-          children: const [
-            Header(),
-            Account(),
-            ActionsIcons(),
-            MyCards(),
-            LineDivider(),
-            CreditCard(),
-            LineDivider(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: const [
+              Header(),
+              Account(),
+              ActionsIcons(),
+              MyCards(),
+              LineDivider(),
+              CreditCard(),
+              LineDivider(),
+              Loan(),
+              LineDivider(),
+            ],
+          ),
         ),
       ),
     );
