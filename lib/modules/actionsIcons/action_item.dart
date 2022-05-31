@@ -17,7 +17,7 @@ class ActionItem extends StatelessWidget {
               padding: const EdgeInsets.all(20),
               margin: const EdgeInsets.only(bottom: 10),
               decoration: BoxDecoration(
-                color: Constants.grey,
+                color: Constants.lightGrey,
                 borderRadius: BorderRadius.circular(40),
               ),
               child: Icon(icon),

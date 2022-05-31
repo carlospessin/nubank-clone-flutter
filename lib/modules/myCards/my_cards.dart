@@ -11,7 +11,7 @@ class MyCards extends StatelessWidget {
         margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: Constants.grey,
+          color: Constants.lightGrey,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Row(

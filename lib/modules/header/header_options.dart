@@ -11,7 +11,7 @@ class HeaderOptions extends StatelessWidget {
       children: [
         _icon(MdiIcons.eyeOutline),
         _icon(MdiIcons.helpCircleOutline),
-        _icon(MdiIcons.emailPlus),
+        _icon(MdiIcons.accountPlusOutline),
       ],
     );
   }
