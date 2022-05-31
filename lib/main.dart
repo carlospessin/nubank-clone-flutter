@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:nubank/modules/account/account.dart';
 import 'package:nubank/modules/actionsIcons/actions.dart';
 import 'package:nubank/modules/creditCard/credit_card.dart';
+import 'package:nubank/modules/discover/discover.dart';
 import 'package:nubank/modules/header/header.dart';
 import 'package:nubank/modules/insurance/insurance.dart';
 import 'package:nubank/modules/investing/investing.dart';
@@ -71,6 +72,7 @@ class _HomeState extends State<Home> {
               LineDivider(),
               Shopping(),
               LineDivider(),
+              Discover(),
             ],
           ),
         ),
