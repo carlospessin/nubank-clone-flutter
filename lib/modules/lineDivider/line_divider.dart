@@ -7,10 +7,11 @@ class LineDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.symmetric(vertical: 20),
-        child: const Divider(
-          thickness: 2,
-          color: Constants.lightGrey,
-        ));
+      margin: const EdgeInsets.symmetric(vertical: 20),
+      child: const Divider(
+        thickness: 2,
+        color: Constants.lightGrey,
+      ),
+    );
   }
 }

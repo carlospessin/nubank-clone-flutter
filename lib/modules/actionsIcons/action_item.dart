@@ -10,23 +10,26 @@ class ActionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.only(right: 20),
-        child: Column(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(20),
-              margin: const EdgeInsets.only(bottom: 10),
-              decoration: BoxDecoration(
-                color: Constants.lightGrey,
-                borderRadius: BorderRadius.circular(40),
-              ),
-              child: Icon(icon),
+      margin: const EdgeInsets.only(right: 20),
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.only(bottom: 10),
+            decoration: BoxDecoration(
+              color: Constants.lightGrey,
+              borderRadius: BorderRadius.circular(40),
             ),
-            Text(name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                )),
-          ],
-        ));
+            child: Icon(icon),
+          ),
+          Text(
+            name,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

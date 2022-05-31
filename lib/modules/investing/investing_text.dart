@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../shared/constants.dart';
+import 'package:nubank/shared/constants.dart';
 
 class InvestingText extends StatelessWidget {
   const InvestingText({Key? key}) : super(key: key);

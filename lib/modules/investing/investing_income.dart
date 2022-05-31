@@ -11,26 +11,28 @@ class InvestingIncome extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 10),
       child: RichText(
         text: const TextSpan(
-            text: 'Rendimento: ',
-            style: TextStyle(
-              color: Constants.grey,
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
-            children: [
-              WidgetSpan(
-                child: Icon(
-                  MdiIcons.arrowUp,
-                  size: 14,
-                  color: Constants.green,
-                ),
+          text: 'Rendimento: ',
+          style: TextStyle(
+            color: Constants.grey,
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+          children: [
+            WidgetSpan(
+              child: Icon(
+                MdiIcons.arrowUp,
+                size: 14,
+                color: Constants.green,
               ),
-              TextSpan(
-                  text: 'R\$ 630,00',
-                  style: TextStyle(
-                    color: Constants.green,
-                  )),
-            ]),
+            ),
+            TextSpan(
+              text: 'R\$ 630,00',
+              style: TextStyle(
+                color: Constants.green,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

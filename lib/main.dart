@@ -53,28 +53,26 @@ class _HomeState extends State<Home> {
 
   _body() {
     return SafeArea(
-      child: Container(
-        child: SingleChildScrollView(
-          child: Column(
-            children: const [
-              Header(),
-              Account(),
-              ActionsIcons(),
-              MyCards(),
-              LineDivider(),
-              CreditCard(),
-              LineDivider(),
-              Loan(),
-              LineDivider(),
-              Investing(),
-              LineDivider(),
-              Insurance(),
-              LineDivider(),
-              Shopping(),
-              LineDivider(),
-              Discover(),
-            ],
-          ),
+      child: SingleChildScrollView(
+        child: Column(
+          children: const [
+            Header(),
+            Account(),
+            ActionsIcons(),
+            MyCards(),
+            LineDivider(),
+            CreditCard(),
+            LineDivider(),
+            Loan(),
+            LineDivider(),
+            Investing(),
+            LineDivider(),
+            Insurance(),
+            LineDivider(),
+            Shopping(),
+            LineDivider(),
+            Discover(),
+          ],
         ),
       ),
     );

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:nubank/modules/investing/investing_balance.dart';
-import 'package:nubank/modules/investing/investing_bdr.dart';
-import 'package:nubank/modules/investing/investing_income.dart';
-import 'package:nubank/modules/investing/investing_text.dart';
-import 'package:nubank/modules/investing/investing_value.dart';
 import 'package:nubank/shared/constants.dart';
 
-class Investing extends StatelessWidget {
-  const Investing({Key? key}) : super(key: key);
+class CardTextWidget extends StatelessWidget {
+  const CardTextWidget(
+      {Key? key, required this.title, required this.description})
+      : super(key: key);
+  final String title;
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -21,26 +20,32 @@ class Investing extends StatelessWidget {
             margin: const EdgeInsets.only(bottom: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
-                  'Investimentos',
-                  style: TextStyle(
+                  title,
+                  style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                Icon(
+                const Icon(
                   MdiIcons.chevronRight,
                   color: Constants.grey,
                 ),
               ],
             ),
           ),
-          const InvestingText(),
-          const InvestingValue(),
-          const InvestingIncome(),
-          const InvestingBdr(),
-          const InvestingBalance(),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            child: Text(
+              description,
+              style: const TextStyle(
+                color: Constants.grey,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          )
         ],
       ),
     );

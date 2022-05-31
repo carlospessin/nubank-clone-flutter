@@ -6,13 +6,11 @@ class DiscoverImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Image.network(
-        url,
-        fit: BoxFit.cover,
-        height: 120,
-        width: MediaQuery.of(context).size.width,
-      ),
+    return Image.network(
+      url,
+      fit: BoxFit.cover,
+      height: 120,
+      width: MediaQuery.of(context).size.width,
     );
   }
 }
