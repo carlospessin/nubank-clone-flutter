@@ -4,6 +4,7 @@ import 'package:nubank/modules/account/account.dart';
 import 'package:nubank/modules/actionsIcons/actions.dart';
 import 'package:nubank/modules/creditCard/credit_card.dart';
 import 'package:nubank/modules/header/header.dart';
+import 'package:nubank/modules/insurance/insurance.dart';
 import 'package:nubank/modules/investing/investing.dart';
 import 'package:nubank/modules/lineDivider/line_divider.dart';
 import 'package:nubank/modules/loan/loan.dart';
@@ -64,6 +65,8 @@ class _HomeState extends State<Home> {
               Loan(),
               LineDivider(),
               Investing(),
+              LineDivider(),
+              Insurance(),
               LineDivider(),
             ],
           ),
